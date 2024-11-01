@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Desafio 3</title>
+</head>
+<body>
+    <script>
+         let nombreProducto = "Cajas de Ravioles";
+         let precioUnitario = 3000;
+         alert(`¡Hola! Bienvenido a "Locura por la pasta", somos un nuevo local de pastas, que en un futuro vamos a poder ofrecer todo tipo de pasta que consigamos, pero por el momento solo le podemos ofrecer unos ricos ravioles, cada caja de ravioles tiene un costo de $${precioUnitario}.`);
+         
+         let cantidadDeseada = prompt("¿Cuantas "+ nombreProducto + "($"+precioUnitario+") quieres llevar?");
+
+         let total = precioUnitario * cantidadDeseada;
+
+         if(cantidadDeseada >= 5) {
+            total = total * 0.90
+         }
+         alert("El total a pagar por " + cantidadDeseada + " " + nombreProducto + " es de $" + total)
+    </script>
+</body>
+</html>
