@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Desafio 5</title>
+</head>
+<body>
+    <script>
+        
+        const productos = ["Remeras","Pantalones","Medias","Zapatillas","Buzos","Camperas"]
+
+        for(let i = 0; i < productos.length; i++ ){
+           console.log("producto " + (i + 1) + " : " + productos[i])
+        }
+        
+        let productoVendido = productos.pop()
+
+        console.log(`Se vendio ${productoVendido}`)
+
+        for(let i = 0; i < productos.length; i++ ){
+           console.log("producto " + (i + 1) + " : " + productos[i])
+        }
+        
+    </script>
+</body>
+</html>
